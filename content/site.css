@@ -1,13 +1,15 @@
 body {
     width:100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin:0;
+    background: url("../images/background.jpg");
+    background-size: cover;
 }
 
 .image {
     position: absolute;
     object-fit: cover;
-    height: 100%;
+    width:  70%;
     z-index: 100;
 }
 

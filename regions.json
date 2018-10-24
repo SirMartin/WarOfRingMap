@@ -1,0 +1,90 @@
+{
+    "main_regions": [
+        {
+            "name": "Elfos",
+            "id": 1,
+            "color": "#00ffaa",
+            "regions": [
+                {
+                    "name": "Puertos Grises",
+                    "id": 101,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Rivendel",
+                    "id": 102,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Lórien",
+                    "id": 103,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Rivendel",
+                    "id": 104,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                }
+            ]
+        },
+        {
+            "name": "Enanos",
+            "id": 2,
+            "color": "ff#00ff",
+            "regions": [
+                {
+                    "name": "Ered Luin del Norte",
+                    "id": 201,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Ered Luin",
+                    "id": 202,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Erebor",
+                    "id": 203,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Colinas de Hierro",
+                    "id": 204,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                }
+            ]
+        }
+    ]
+}
