@@ -3,7 +3,7 @@
         {
             "name": "Elfos",
             "id": 1,
-            "color": "#00ffaa",
+            "color": "#048f1a",
             "regions": [
                 {
                     "name": "Puertos Grises",
@@ -46,7 +46,7 @@
         {
             "name": "Enanos",
             "id": 2,
-            "color": "ff#00ff",
+            "color": "#501b13",
             "regions": [
                 {
                     "name": "Ered Luin del Norte",
@@ -84,6 +84,458 @@
                     "hasVilla": true,
                     "hasFortaleza": false
                 }
+            ]
+        },
+        {
+            "name": "Gondor",
+            "id": 3,
+            "color": "#43426c",
+            "regions": [
+                {
+                    "name": "Anfalas",
+                    "id": 301,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Erech",
+                    "id": 302,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Dol Amroth",
+                    "id": 303,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Lamedon",
+                    "id": 304,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Pelargir",
+                    "id": 305,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": true,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Lossarnach",
+                    "id": 306,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Minas Tirith",
+                    "id": 307,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Bosque de Drúadan",
+                    "id": 308,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                }         
+            ]
+        },
+        {
+            "name": "El Norte",
+            "id": 4,
+            "color": "#0c8ab3",
+            "regions": [  
+                {
+                    "name": "La Comarca",
+                    "id": 401,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": true,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Los Gamos",
+                    "id": 402,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Bree",
+                    "id": 403,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Quebradas del Norte",
+                    "id": 404,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Carroca",
+                    "id": 405,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Rhosgobel",
+                    "id": 406,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Viejo Camino del Bosque",
+                    "id": 407,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Valle",
+                    "id": 408,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": true,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                }              
+            ]
+        },
+        {
+            "name": "Rohan",
+            "id": 5,
+            "color": "#046b26",
+            "regions": [
+                {
+                    "name": "Vados del Isen",
+                    "id": 501,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": true
+                },
+                {
+                    "name": "Abismo de Helm",
+                    "id": 502,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Oestemnet",
+                    "id": 503,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Edoras",
+                    "id": 504,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": true,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Estemnet",
+                    "id": 505,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Folde",
+                    "id": 506,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                }
+            ]
+        },
+        {
+            "name": "Isengaard",
+            "id": 6,
+            "color": "#ded800",
+            "regions": [
+                {
+                    "name": "Tierras Brunas del Norte",
+                    "id": 601,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Tierras Brunas del Sur",
+                    "id": 602,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Quebrada de Rohan",
+                    "id": 603,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Orthanc",
+                    "id": 604,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                }
+            ]
+        },
+        {
+            "name": "Sauron",
+            "id": 7,
+            "color": "#e05017",
+            "regions": [
+                {
+                    "name": "Angmar",
+                    "id": 701,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": true,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Monte Gram",
+                    "id": 702,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Monte Gundabad",
+                    "id": 703,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Moria",
+                    "id": 704,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Dol Guldur",
+                    "id": 705,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Bosque Negro Meridional",
+                    "id": 706,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Morannon",
+                    "id": 707,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Minas Morgul",
+                    "id": 708,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Nurn",
+                    "id": 709,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Gorgoroth",
+                    "id": 710,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Barad-Dûr",
+                    "id": 711,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                }
+            ]
+        },
+        {
+            "name": "Hombres del Sur",
+            "id": 8,
+            "color": "#faac25",
+            "regions": [
+                {
+                    "name": "Umbar",
+                    "id": 801,
+                    "path": "asdasd",
+                    "hasBaluarte": true,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Cercano Harad",
+                    "id": 802,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Lejano Harad",
+                    "id": 803,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": true,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Khand",
+                    "id": 804,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                }
+            ]
+        },
+        {
+            "name": "Hombres del Norte",
+            "id": 9,
+            "color": "#faac25",
+            "regions": [
+                {
+                    "name": "Rhûn del Norte",
+                    "id": 901,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Rhûn del Sur",
+                    "id": 902,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": true,
+                    "hasFortaleza": false
+                },
+                {
+                    "name": "Rhûn del Este",
+                    "id": 903,
+                    "path": "asdasd",
+                    "hasBaluarte": false,
+                    "hasCity": false,
+                    "hasVilla": false,
+                    "hasFortaleza": false
+                }
+            ]
+        },
+        {
+            "name": "Regiones Libres",
+            "id": 10,
+            "color": "#c0c0c0",
+            "regions": [                
             ]
         }
     ]
