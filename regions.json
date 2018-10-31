@@ -68,7 +68,7 @@
             {
                 "name": "Erebor",
                 "id": 203,
-                "path": "polygon(71% 7%, 77% 7%, 75% 15%, 75% 17%, 73% 17%, 73% 15%, 70% 14%, 70% 11%);",
+                "path": "polygon(71% 7%, 77% 7%, 75% 15%, 75% 17%, 73% 17%, 73% 15%, 70% 14%, 70% 11%)",
                 "isStronghold": true,
                 "isCity": false,
                 "isTown": false,
@@ -77,7 +77,7 @@
             {
                 "name": "Colinas de Hierro",
                 "id": 204,
-                "path": "polygon(75% 18%, 75% 15%, 77% 7%, 85% 7%, 86% 17%, 83% 18%, 80% 17%);",
+                "path": "polygon(75% 18%, 75% 15%, 77% 7%, 85% 7%, 86% 17%, 83% 18%, 80% 17%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": true,
@@ -208,7 +208,7 @@
             {
                 "name": "Carroca",
                 "id": 405,
-                "path": "polygon(56% 10%, 59% 13%, 60% 18%, 60% 21%, 63% 21%, 62% 19%, 62% 16%, 62% 13%, 61% 9%, 61% 6%, 58% 8%);",
+                "path": "polygon(56% 10%, 59% 13%, 60% 18%, 60% 21%, 63% 21%, 62% 19%, 62% 16%, 62% 13%, 61% 9%, 61% 6%, 58% 8%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": true,
@@ -217,7 +217,7 @@
             {
                 "name": "Rhosgobel",
                 "id": 406,
-                "path": "polygon(60% 27%, 60% 21%, 63% 21%, 64% 26%);",
+                "path": "polygon(60% 27%, 60% 21%, 63% 21%, 64% 26%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -355,7 +355,7 @@
             {
                 "name": "Angmar",
                 "id": 701,
-                "path": "polygon(34% 0%, 34% 6%, 38% 7%, 41% 7%, 40% 2%, 40% 0%);",
+                "path": "polygon(34% 0%, 34% 6%, 38% 7%, 41% 7%, 40% 2%, 40% 0%)",
                 "isStronghold": false,
                 "isCity": true,
                 "isTown": false,
@@ -364,7 +364,7 @@
             {
                 "name": "Monte Gram",
                 "id": 702,
-                "path": "polygon(40% 1%, 46% 1%, 46% 10%, 43% 10%, 41% 8%, 41% 4%);",
+                "path": "polygon(40% 1%, 46% 1%, 46% 10%, 43% 10%, 41% 8%, 41% 4%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -373,7 +373,7 @@
             {
                 "name": "Monte Gundabad",
                 "id": 703,
-                "path": "polygon(47% 0%, 46% 10%, 51% 11%, 53% 9%, 55% 9%, 59% 7%, 60% 0%);",
+                "path": "polygon(47% 0%, 46% 10%, 51% 11%, 53% 9%, 55% 9%, 59% 7%, 60% 0%)",
                 "isStronghold": true,
                 "isCity": false,
                 "isTown": false,
@@ -646,7 +646,7 @@
             {
                 "name": "Minhiriath",
                 "id": 1013,
-                "path": "polygon(31% 26%, 37% 38%, 34% 44%, 32% 51%, 29% 54%, 27% 50%, 27% 42%, 26% 46%, 25% 43%, 25% 39%, 26% 32%, 29% 32%, 30% 31%);",
+                "path": "polygon(31% 26%, 37% 38%, 34% 44%, 32% 51%, 29% 54%, 27% 50%, 27% 42%, 26% 46%, 25% 43%, 25% 39%, 26% 32%, 29% 32%, 30% 31%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -664,7 +664,7 @@
             {
                 "name": "Enedwaith",
                 "id": 1015,
-                "path": "polygon(32% 65%, 32% 58%, 32% 53%, 33% 49%, 34% 44%, 37% 47%, 39% 50%, 39% 54%, 39% 58%, 40% 63%, 37% 61%, 35% 62%, 34% 64%);",
+                "path": "polygon(32% 65%, 32% 58%, 32% 53%, 33% 49%, 34% 44%, 37% 47%, 39% 50%, 39% 54%, 39% 58%, 40% 63%, 37% 61%, 35% 62%, 34% 64%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -709,7 +709,7 @@
             {
                 "name": "Nido de Águilas",
                 "id": 1020,
-                "path": "polygon(52% 11%, 54% 8%, 56% 10%, 58% 12%, 59% 15%, 56% 16%, 54% 16%);",
+                "path": "polygon(52% 11%, 54% 8%, 56% 10%, 58% 12%, 59% 15%, 56% 16%, 54% 16%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -745,7 +745,7 @@
             {
                 "name": "Campos Gladios",
                 "id": 1024,
-                "path": "polygon(56% 28%, 58% 29%, 60% 29%, 60% 27%, 60% 24%, 57% 23%, 55% 24%, 54% 24%, 54% 26%, 55% 27%);",
+                "path": "polygon(56% 28%, 58% 29%, 60% 29%, 60% 27%, 60% 24%, 57% 23%, 55% 24%, 54% 24%, 54% 26%, 55% 27%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -754,7 +754,7 @@
             {
                 "name": "Valle Sombrío",
                 "id": 1025,
-                "path": "polygon(56% 28%, 59% 29%, 59% 33%, 59% 36%, 59% 41%, 58% 40%, 58% 37%, 58% 35%, 55% 32%, 55% 32%, 56% 30%);",
+                "path": "polygon(56% 28%, 59% 29%, 59% 33%, 59% 36%, 59% 41%, 58% 40%, 58% 37%, 58% 35%, 55% 32%, 55% 32%, 56% 30%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -781,7 +781,7 @@
             {
                 "name": "Bosque Negro Septentrional",
                 "id": 1028,
-                "path": "polygon(61% 7%, 60% 11%, 63% 14%, 66% 15%, 68% 14%, 66% 12%, 67% 6%);",
+                "path": "polygon(61% 7%, 60% 11%, 63% 14%, 66% 15%, 68% 14%, 66% 12%, 67% 6%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -790,7 +790,7 @@
             {
                 "name": "Brezal Marchito",
                 "id": 1029,
-                "path": "polygon(67% 7%, 66% 12%, 70% 17%, 73% 17%, 72% 15%, 70% 14%, 70% 12%, 71% 7%);",
+                "path": "polygon(67% 7%, 66% 12%, 70% 17%, 73% 17%, 72% 15%, 70% 14%, 70% 12%, 71% 7%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -799,7 +799,7 @@
             {
                 "name": "Bosque Negro Occidental",
                 "id": 1030,
-                "path": "polygon(62% 14%, 63% 19%, 66% 20%, 66% 15%, 64% 14%);",
+                "path": "polygon(62% 14%, 63% 19%, 66% 20%, 66% 15%, 64% 14%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -826,7 +826,7 @@
             {
                 "name": "Valle Septentrional del Anduin",
                 "id": 1033,
-                "path": "polygon(60% 27%, 64% 27%, 65% 32%, 63% 34%, 61% 34%, 60% 33%, 60% 29%);",
+                "path": "polygon(60% 27%, 64% 27%, 65% 32%, 63% 34%, 61% 34%, 60% 33%, 60% 29%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -835,7 +835,7 @@
             {
                 "name": "Valle Meridional del Anduin",
                 "id": 1034,
-                "path": "polygon(60% 33%, 60% 38%, 60% 41%, 61% 43%, 63% 41%, 62% 39%, 63% 35%);",
+                "path": "polygon(60% 33%, 60% 38%, 60% 41%, 61% 43%, 63% 41%, 62% 39%, 63% 35%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
