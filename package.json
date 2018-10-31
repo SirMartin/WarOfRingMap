@@ -1,0 +1,24 @@
+{
+  "name": "warofringmap",
+  "version": "1.0.0",
+  "description": "An interactive map for the board game War of the Ring to locate the different regions.",
+  "main": "typescript/start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SirMartin/WarOfRingMap.git"
+  },
+  "author": "SirMartin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SirMartin/WarOfRingMap/issues"
+  },
+  "homepage": "https://github.com/SirMartin/WarOfRingMap#readme",
+  "dependencies": {
+    "@types/jquery": "^3.3.22",
+    "@types/knockout": "^3.4.59",
+    "knockout": "^3.4.2"
+  }
+}

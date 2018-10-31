@@ -2,22 +2,45 @@
 
 <head>
     <link rel="stylesheet" href="content/site.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="node_modules/knockout/build/output/knockout-latest.js"></script>
+    <script src="typescript/Controllers/mapController.js"></script>
+    <script src="typescript/Models/regionModels.js"></script>
+    <script src="typescript/start.js"></script>
 </head>
 
 <!--
-    F -> Fortificacion
-    V -> Villa
-    C -> Ciudad
-    B -> Baluarte
+    F -> Fortification
+    V -> Town
+    C -> City
+    B -> Stronghold
 -->
 
 <body>
     <div style="width:70%; display: inline-block; height: 100%;">
-        <img src="images/map_es.jpg" class="image clipped" />
+        <img src="images/map_es.jpg" class="image clipped" data-bind="style: { clipPath: selectedPath }" />
         <img src="images/map_es.jpg" class="image darker" />
     </div>
 
     <div style="position: absolute; right: 0px;width:30%;display: inline-block;">
+        asdas
+        <div style="width:50%; display: inline-block;">
+            <ul data-bind="foreach: regions">
+                <li>
+                    <span data-bind="text: name;"></span>
+                    <ul data-bind="foreach: regions;">
+                        <li>
+                            <a href="#" data-bind="click: function() {$parents[1].showRegion($data);return false;}"><span
+                                    data-bind="text: name;"></span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div style="position: absolute; right: 0px;width:30%;display: inline-block;">
         <div style="width:50%; display: inline-block;">
             <ul>
                 <li>Elfos (verde claro) 4
@@ -185,7 +208,11 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <!-- <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Foto de fondo creado por jannoon028 - www.freepik.es</a> -->
+    <script type="text/javascript">
+        new WarOfTheRingMap.Start();
+    </script>
 </body>
+
 </html>

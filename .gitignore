@@ -1,0 +1,9 @@
+# Typescript
+**/Typescript/**/*.js
+**/Typescript/**/*.js.map
+
+#npm
+node_modules/
+
+#Visual Studio
+.vs/
