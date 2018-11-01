@@ -4,6 +4,7 @@ module WarOfTheRingMap.Models {
         id: number;
         name: string;
         color: string;
+        isShadows: KnockoutObservable<boolean>;
         regions: KnockoutObservableArray<Subregion>;
 
         constructor(d)
@@ -12,6 +13,7 @@ module WarOfTheRingMap.Models {
             this.name = d.name;
             this.color = d.color;
             this.regions = ko.observableArray(d.regions);
+            this.isShadows = ko.observable(d.isShadows);
         }
     }
 

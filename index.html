@@ -5,210 +5,50 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="node_modules/knockout/build/output/knockout-latest.js"></script>
+    <script src="node_modules/list.js/dist/list.min.js"></script>
     <script src="typescript/Controllers/mapController.js"></script>
     <script src="typescript/Models/regionModels.js"></script>
     <script src="typescript/start.js"></script>
 </head>
 
-<!--
-    F -> Fortification
-    V -> Town
-    C -> City
-    B -> Stronghold
--->
-
 <body>
+    <div>
+        <a href="#" data-bind="visible: selectedPath() != '', click: function() { reset(); return false; }">Reset</a>
+    </div>
+
+    <div class="flag-container">
+        <a href="#" data-bind="click: function() {setLanguage('es');return false;}"><img class="flag" src="images/es.svg" /></a>
+        <a href="#" data-bind="click: function() {setLanguage('en');return false;}"><img class="flag" src="images/us.svg" /></a>
+    </div>
+
     <div style="width:70%; display: inline-block; height: 100%;">
-        <img src="images/map_es.jpg" class="image clipped" data-bind="style: { clipPath: selectedPath }" />
-        <img src="images/map_es.jpg" class="image darker" />
+        <img class="image clipped" data-bind="attr: {src: imageUrl}, style: { clipPath: selectedPath }" />
+        <img class="image darker" data-bind="attr: {src: imageUrl}" />
     </div>
 
     <div style="position: absolute; right: 0px;width:30%;display: inline-block;">
-        <div style="width:50%; display: inline-block;">
+        <!-- <div style="width:50%; display: inline-block;"> -->
+        <div id="the-list">
             <ul data-bind="foreach: regions">
                 <li>
                     <span data-bind="text: name;"></span>
                     <ul data-bind="foreach: regions;">
                         <li>
-                            <a href="#" data-bind="click: function() {$parents[1].showRegion($data);return false;}"><span
-                                    data-bind="text: name;"></span></a>
+                            <a href="#" data-bind="click: function() {$parents[1].showRegion($data);return false;}"><span data-bind="text: name;"></span></a>
+                                    <img class="fortification" src="images/fortification.png" data-bind="visible: isFortification" />
+                                    <img class="town" src="images/shadows_town.png" data-bind="visible: isTown && $parent.isShadows" />
+                                    <img class="town" src="images/shadows_city.png" data-bind="visible: isCity && $parent.isShadows" />
+                                    <img class="city" src="images/shadows_stronghold.png" data-bind="visible: isStronghold && $parent.isShadows" />
+                                    <img class="city" src="images/free_town.png" data-bind="visible: isTown && !$parent.isShadows()" />
+                                    <img class="stronghold" src="images/free_city.png" data-bind="visible: isCity && !$parent.isShadows()" />
+                                    <img class="stronghold" src="images/free_stronghold.png" data-bind="visible: isStronghold && !$parent.isShadows()" />
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
-
-    <!-- <div style="position: absolute; right: 0px;width:30%;display: inline-block;">
-        <div style="width:50%; display: inline-block;">
-            <ul>
-                <li>Elfos (verde claro) 4
-                    <ul>
-                        <li>Elfos (verde claro) 4
-                            <ul>
-                                <li>Puertos Grises B</li>
-                                <li>Rivendel B</li>
-                                <li>Lórien B</li>
-                                <li>Reino del Bosque B</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Enanos (marron) 4
-                            <ul>
-                                <li>Ered Luin del Norte</li>
-                                <li>Ered Luin V</li>
-                                <li>Erebor B</li>
-                                <li>Colinas de Hierro V</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Gondor (azul oscuro) 8
-                            <ul>
-                                <li>Anfalas</li>
-                                <li>Erech</li>
-                                <li>Dol Amroth B</li>
-                                <li>Lamedon V</li>
-                                <li>Pelargir C</li>
-                                <li>Lossarnach V</li>
-                                <li>Minas Tirith B</li>
-                                <li>Bosque de Drúadan</li>
-                            </ul>
-                        </li>
-                        <li>
-                            El Norte (azul claro) 8
-                            <ul>
-                                <li>La Comarca C</li>
-                                <li>Los Gamos</li>
-                                <li>Bree V</li>
-                                <li>Quebradas del Norte</li>
-                                <li>Carroca V</li>
-                                <li>Rhosgobel</li>
-                                <li>Viejo Camino del Bosque</li>
-                                <li>Valle C</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Rohan (verde oscuro) 6
-                            <ul>
-                                <li>Vados del Isen F</li>
-                                <li>Abismo de Helm B</li>
-                                <li>Oestemnet V</li>
-                                <li>Edoras C</li>
-                                <li>Estemnet</li>
-                                <li>Folde V</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Isengaard (amarillo) 4
-                            <ul>
-                                <li>Tierras Brunas del Norte V</li>
-                                <li>Tierras Brunas del Sur V</li>
-                                <li>Quebrada de Rohan</li>
-                                <li>Orthanc B</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Sauron (rojo) 11
-                            <ul>
-                                <li>Angmar C</li>
-                                <li>Monte Gram</li>
-                                <li>Monte Gundabad B</li>
-                                <li>Moria B</li>
-                                <li>Dol Guldur B</li>
-                                <li>Bosque Negro Meridional</li>
-                                <li>Morannon B</li>
-                                <li>Minas Morgul B</li>
-                                <li>Nurn V</li>
-                                <li>Gorgoroth</li>
-                                <li>Barad-Dûr B</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Hombres del Sur (naranja) 4
-                            <ul>
-                                <li>Umbar B</li>
-                                <li>Cercano Harad V</li>
-                                <li>Lejano Harad C</li>
-                                <li>Khand</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Hombres del Este (naranja) 3
-                            <ul>
-                                <li>Rhûn del Norte V</li>
-                                <li>Rhûn del Sur v</li>
-                                <li>Rhûn del Este</li>
-                            </ul>
-                        </li>
-                    </ul>
-        </div>
-        <div style="width:50%;height: 100%;float:left;">
-            <ul>
-                <li>
-                    Regiones Libres 19 + 34 = 53
-                    <ul>
-                        <li>Forlindon</li>13
-                        <li>Evendim</li>
-                        <li>Arnor</li>
-                        <li>Landas de Etten</li>
-                        <li>Colinas del Viento</li>
-                        <li>Bosque de los Trolls</li>
-                        <li>Quebradas del Sur</li>
-                        <li>Colinas de la Torre</li>
-                        <li>Harlindon</li>
-                        <li>Ered Luin del Sur</li>
-                        <li>Bosque Viejo</li>
-                        <li>Cardolan</li>
-                        <li>Minhiriath</li>
-
-                        <li>Tharbad</li>12
-                        <li>Enedwaith</li>
-                        <li>Drúwaith Iaur</li>
-                        <li>Andrast</li>
-                        <li>Acebeda</li>
-                        <li>Vados del Bruinen</li>
-                        <li>Nido de Águilas</li>
-                        <li>Antiguo Vado</li>
-                        <li>Puerta de los Trasgos</li>
-                        <li>Paso Alto</li>
-                        <li>Campos Gladios</li>
-                        <li>Valle Sombrío</li>
-
-                        <li>Fangorn</li> 14
-                        <li>Parth Celebrant</li>
-                        <li>Bosque Negro Septentrional</li>
-                        <li>Brezal Marchito</li>
-                        <li>Bosque Negro Occidental</li>
-                        <li>Estrechos del Bosque</li>
-                        <li>Bosque Negro Oriental</li>
-                        <li>Valle Septentrional del Anduin</li>
-                        <li>Valle Meridional del Anduin</li>
-                        <li>Tierras Pardas Occidenales</li>
-                        <li>Tierras Pardas Orientales</li>
-                        <li>Emyn Muil Occidentales</li>
-                        <li>Emyn Muil Orientales</li>
-                        <li>Ciénaga de los Muertos</li>
-
-                        <li>Osgilath F</li> 14
-                        <li>Harondor del Oeste</li>
-                        <li>Harondor del Este</li>
-                        <li>Ithilien del Norte</li>
-                        <li>Ithilien del Sur</li>
-                        <li>Rhovanion Septentrional</li>
-                        <li>Valle del Carnen</li>
-                        <li>Valle del Celduin</li>
-                        <li>Rhovanion Meridional</li>
-                        <li>Dorwinion Septentrional</li>
-                        <li>Dorwinion Meridional</li>
-                        <li>Tierras de Nadie</li>
-                        <li>Dagorlad</li>
-                        <li>Montañas de Ceniza</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-    <!-- <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Foto de fondo creado por jannoon028 - www.freepik.es</a> -->
+    <!-- <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Background photo created by jannoon028 - www.freepik.es</a> -->
     <script type="text/javascript">
         new WarOfTheRingMap.Start();
     </script>

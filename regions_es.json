@@ -3,6 +3,7 @@
         "name": "Elfos",
         "id": 1,
         "color": "#048f1a",
+        "isShadows": false,
         "regions": [
             {
                 "name": "Puertos Grises",
@@ -46,6 +47,7 @@
         "name": "Enanos",
         "id": 2,
         "color": "#501b13",
+        "isShadows": false,
         "regions": [
             {
                 "name": "Ered Luin del Norte",
@@ -89,6 +91,7 @@
         "name": "Gondor",
         "id": 3,
         "color": "#43426c",
+        "isShadows": false,
         "regions": [
             {
                 "name": "Anfalas",
@@ -168,6 +171,7 @@
         "name": "El Norte",
         "id": 4,
         "color": "#0c8ab3",
+        "isShadows": false,
         "regions": [
             {
                 "name": "La Comarca",
@@ -247,6 +251,7 @@
         "name": "Rohan",
         "id": 5,
         "color": "#046b26",
+        "isShadows": false,
         "regions": [
             {
                 "name": "Vados del Isen",
@@ -305,9 +310,10 @@
         ]
     },
     {
-        "name": "Isengaard",
+        "name": "Isengard",
         "id": 6,
         "color": "#ded800",
+        "isShadows": true,
         "regions": [
             {
                 "name": "Tierras Brunas del Norte",
@@ -351,6 +357,7 @@
         "name": "Sauron",
         "id": 7,
         "color": "#e05017",
+        "isShadows": true,
         "regions": [
             {
                 "name": "Angmar",
@@ -457,6 +464,7 @@
         "name": "Hombres del Sur",
         "id": 8,
         "color": "#faac25",
+        "isShadows": true,
         "regions": [
             {
                 "name": "Umbar",
@@ -497,9 +505,10 @@
         ]
     },
     {
-        "name": "Hombres del Norte",
+        "name": "Hombres del Este",
         "id": 9,
         "color": "#faac25",
+        "isShadows": true,
         "regions": [
             {
                 "name": "Rhûn del Norte",
@@ -534,6 +543,7 @@
         "name": "Regiones Libres",
         "id": 10,
         "color": "#c0c0c0",
+        "isShadows": false,
         "regions": [
             {
                 "name": "Forlindon",
@@ -772,7 +782,7 @@
             {
                 "name": "Parth Celebrant",
                 "id": 1027,
-                "path": "polygon(52% 40%, 53% 43%, 55% 44%, 57% 46%, 57% 49%, 56% 52%, 53% 52%, 51% 49%, 49% 47%, 50% 43%, 50% 41%)",
+                "path": "polygon(52% 41%, 54% 43%, 56% 44%, 56% 46%, 58% 46%, 61% 47%, 63% 47%, 63% 46%, 62% 43%, 59% 41%, 57% 40%, 55% 40%, 54% 39%, 53% 39%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -808,7 +818,7 @@
             {
                 "name": "Estrechos del Bosque",
                 "id": 1031,
-                "path": "polygon(52% 40%, 53% 43%, 55% 44%, 57% 46%, 57% 49%, 56% 52%, 53% 52%, 51% 49%, 49% 47%, 50% 43%, 50% 41%)",
+                "path": "polygon(64% 25%, 64% 28%, 65% 31%, 67% 33%, 68% 32%, 68% 30%, 67% 27%, 67% 25%, 66% 25%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -817,7 +827,7 @@
             {
                 "name": "Bosque Negro Oriental",
                 "id": 1032,
-                "path": "polygon(52% 40%, 53% 43%, 55% 44%, 57% 46%, 57% 49%, 56% 52%, 53% 52%, 51% 49%, 49% 47%, 50% 43%, 50% 41%)",
+                "path": "polygon(66% 32%, 67% 30%, 68% 27%, 68% 25%, 70% 25%, 71% 25%, 71% 28%, 71% 30%, 70% 31%, 69% 32%, 68% 33%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -844,7 +854,7 @@
             {
                 "name": "Tierras Pardas Occidentales",
                 "id": 1035,
-                "path": "polygon(52% 40%, 53% 43%, 55% 44%, 57% 46%, 57% 49%, 56% 52%, 53% 52%, 51% 49%, 49% 47%, 50% 43%, 50% 41%)",
+                "path": "polygon(68% 42%, 68% 45%, 68% 48%, 65% 48%, 64% 49%, 64% 46%, 62% 46%, 62% 45%, 62% 43%, 62% 42%, 64% 41%, 65% 42%, 67% 42%)",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
@@ -853,7 +863,7 @@
             {
                 "name": "Tierras Pardas Orientales",
                 "id": 1036,
-                "path": "polygon(52% 40%, 53% 43%, 55% 44%, 57% 46%, 57% 49%, 56% 52%, 53% 52%, 51% 49%, 49% 47%, 50% 43%, 50% 41%)",
+                "path": "polygon(68% 42%, 68% 44%, 68% 48%, 70% 48%, 71% 47%, 73% 47%, 74% 47%, 74% 45%, 74% 43%, 73% 41%, 72% 39%, 71% 38%, 70% 40%);",
                 "isStronghold": false,
                 "isCity": false,
                 "isTown": false,
