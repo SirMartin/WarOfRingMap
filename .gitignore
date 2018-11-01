@@ -1,6 +1,6 @@
 # Typescript
-**/Typescript/**/*.js
-**/Typescript/**/*.js.map
+# **/Typescript/**/*.js
+# **/Typescript/**/*.js.map
 
 #npm
 node_modules/
