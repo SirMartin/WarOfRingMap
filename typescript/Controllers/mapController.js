@@ -28,6 +28,12 @@ var WarOfTheRingMap;
                         self.backupRegions = JSON.stringify(data);
                     });
                 };
+                this.enableHelp = () => {
+                    this.isHelpPopupVisible(true);
+                };
+                this.disableHelp = () => {
+                    this.isHelpPopupVisible(false);
+                };
                 this.collapseRegion = (region) => {
                     region.isCollapsed(!region.isCollapsed());
                 };
@@ -58,6 +64,7 @@ var WarOfTheRingMap;
                 });
                 this.searchPlaceholderText = ko.observable("");
                 this.regions = ko.observableArray([]);
+                this.isHelpPopupVisible = ko.observable(false);
                 this.selectedPath = ko.observable("");
                 this.language = ko.observable("es");
                 this.setTranslationTexts();

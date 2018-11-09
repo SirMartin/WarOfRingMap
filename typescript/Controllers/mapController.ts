@@ -11,6 +11,8 @@ module WarOfTheRingMap.Controllers {
 
         searchText: KnockoutObservable<string>;
 
+        isHelpPopupVisible: KnockoutObservable<boolean>;
+
         // Texts
         searchPlaceholderText: KnockoutObservable<string>;
 
@@ -24,6 +26,7 @@ module WarOfTheRingMap.Controllers {
             this.searchPlaceholderText = ko.observable("");
 
             this.regions = ko.observableArray([]);
+            this.isHelpPopupVisible= ko.observable(false);
             this.selectedPath = ko.observable("");
             this.language = ko.observable("es");
             this.setTranslationTexts();
@@ -67,6 +70,14 @@ module WarOfTheRingMap.Controllers {
 
                 self.backupRegions = JSON.stringify(data);
             });
+        }
+
+        enableHelp = () => {
+            this.isHelpPopupVisible(true);
+        }
+
+        disableHelp = () => {
+            this.isHelpPopupVisible(false);
         }
 
         collapseRegion = (region: Models.Region) => {

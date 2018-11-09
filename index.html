@@ -29,22 +29,53 @@
     </div>
 
     <div class="regions">
-        <input type="text" class="search-field" data-bind="textInput: searchText, attr: { placeholder: searchPlaceholderText }">
+        <div>
+            <input type="text" class="search-field" data-bind="textInput: searchText, attr: { placeholder: searchPlaceholderText }">
+            <a href="#" data-bind="event: { mouseover: enableHelp, mouseout: disableHelp }"><img class="help-image" /></a>
+            <div class="help-popup" data-bind="visible: isHelpPopupVisible">
+                <ul>
+                    <li>
+                        All the images of the game, names belongs to his creators and owners.
+                        <ul>
+                            <li>Designers: Roberto Di Meglio, Marco Maggi, Francesco Nepitello</li>
+                            <li>Artists: John Howe, Fabio Maiorana</li>
+                            <li>Spanish Version: <a href="http://devir.es/">Devir Iberia</a></li>
+                            <li>English Version: <a href="http://www.aresgames.eu/">Ares Games</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Background photo created by
+                            jannoon028 - www.freepik.es</a>
+                    </li>
+                    <li>
+                        Info icon made by <a href="https://www.flaticon.com/authors/picol" title="Picol">Picol</a> from
+                        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                            href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                            3.0 BY</a>
+                    </li>
+                    <li>
+                        Flag images by <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div>
             <ul data-bind="foreach: regions">
                 <!-- ko if: regions().length > 0 -->
                 <li>
-                    <a href="#" data-bind="click: function() {$parent.collapseRegion($data);return false;}"><span class="region-name" data-bind="text: name, style: { color: color }"></span></a>
+                    <a href="#" data-bind="click: function() {$parent.collapseRegion($data);return false;}"><span class="region-name"
+                            data-bind="text: name, style: { color: color }"></span></a>
                     <ul data-bind="foreach: regions, visible: !isCollapsed()">
                         <li>
-                            <a href="#" data-bind="click: function() {$parents[1].showRegion($data);return false;}"><span data-bind="text: name;"></span></a>
-                                    <img class="fortification" src="images/fortification.png" data-bind="visible: isFortification" />
-                                    <img class="town" src="images/shadows_town.png" data-bind="visible: isTown && $parent.isShadows" />
-                                    <img class="town" src="images/shadows_city.png" data-bind="visible: isCity && $parent.isShadows" />
-                                    <img class="city" src="images/shadows_stronghold.png" data-bind="visible: isStronghold && $parent.isShadows" />
-                                    <img class="city" src="images/free_town.png" data-bind="visible: isTown && !$parent.isShadows()" />
-                                    <img class="stronghold" src="images/free_city.png" data-bind="visible: isCity && !$parent.isShadows()" />
-                                    <img class="stronghold" src="images/free_stronghold.png" data-bind="visible: isStronghold && !$parent.isShadows()" />
+                            <a href="#" data-bind="click: function() {$parents[1].showRegion($data);return false;}"><span
+                                    data-bind="text: name;"></span></a>
+                            <img class="fortification" src="images/fortification.png" data-bind="visible: isFortification" />
+                            <img class="town" src="images/shadows_town.png" data-bind="visible: isTown && $parent.isShadows" />
+                            <img class="town" src="images/shadows_city.png" data-bind="visible: isCity && $parent.isShadows" />
+                            <img class="city" src="images/shadows_stronghold.png" data-bind="visible: isStronghold && $parent.isShadows" />
+                            <img class="city" src="images/free_town.png" data-bind="visible: isTown && !$parent.isShadows()" />
+                            <img class="stronghold" src="images/free_city.png" data-bind="visible: isCity && !$parent.isShadows()" />
+                            <img class="stronghold" src="images/free_stronghold.png" data-bind="visible: isStronghold && !$parent.isShadows()" />
                         </li>
                     </ul>
                 </li>
@@ -52,10 +83,13 @@
             </ul>
         </div>
     </div>
-    <!-- <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Background photo created by jannoon028 - www.freepik.es</a> -->
     <script type="text/javascript">
         new WarOfTheRingMap.Start();
     </script>
 </body>
 
 </html>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/picol" title="Picol">Picol</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
