@@ -4,8 +4,20 @@ var WarOfTheRingMap;
     (function (Controllers) {
         class MapController {
             constructor() {
-                this.createList = () => {
-                    //var theList = new List("the-list", null);
+                this.searching = (searchValue) => {
+                    // Check for subregions.
+                    var result = [];
+                    this.regions(JSON.parse(this.backupRegions).map((x) => {
+                        return new WarOfTheRingMap.Models.Region(x);
+                    }));
+                    _.each(this.regions(), (r) => {
+                        let newRegion = r;
+                        newRegion.regions(_.filter(newRegion.regions(), (x) => {
+                            return x.name.toLowerCase().includes(searchValue.toLowerCase());
+                        }));
+                        result.push(newRegion);
+                    });
+                    this.regions(result);
                 };
                 this.readDataFromJson = () => {
                     var self = this;
@@ -13,7 +25,11 @@ var WarOfTheRingMap;
                         self.regions(data.map((x) => {
                             return new WarOfTheRingMap.Models.Region(x);
                         }));
+                        self.backupRegions = JSON.stringify(data);
                     });
+                };
+                this.collapseRegion = (region) => {
+                    region.isCollapsed(!region.isCollapsed());
                 };
                 this.showRegion = (subregion) => {
                     this.selectedPath(subregion.path);
@@ -25,11 +41,26 @@ var WarOfTheRingMap;
                     if (this.language() !== lang) {
                         this.language(lang);
                         this.readDataFromJson();
+                        this.setTranslationTexts();
                     }
                 };
+                this.setTranslationTexts = () => {
+                    if (this.language() == "es") {
+                        this.searchPlaceholderText("Buscar...");
+                    }
+                    else {
+                        this.searchPlaceholderText("Search...");
+                    }
+                };
+                this.searchText = ko.observable("");
+                this.searchText.subscribe((value) => {
+                    this.searching(value);
+                });
+                this.searchPlaceholderText = ko.observable("");
                 this.regions = ko.observableArray([]);
                 this.selectedPath = ko.observable("");
                 this.language = ko.observable("es");
+                this.setTranslationTexts();
                 this.readDataFromJson();
                 this.imageUrl = ko.computed(() => {
                     if (this.language() && this.language() == "es") {
@@ -37,7 +68,6 @@ var WarOfTheRingMap;
                     }
                     return "images/map_en.jpg";
                 });
-                this.createList();
             }
         }
         Controllers.MapController = MapController;

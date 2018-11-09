@@ -17,6 +17,19 @@ a {
     z-index: 100;
 }
 
+.map {
+    width:70%; display: inline-block; height: 100%;
+}
+
+.regions {
+    position: absolute; right: 0px;width:30%;display: inline-block;
+}
+
+.region-name {
+    font-size: large;
+    font-weight: bold;
+}
+
 .darker {
     filter: brightness(50%);
     z-index: 1;
@@ -36,6 +49,10 @@ a {
 .flag {
  width: 30px;
  height: 23px;
+}
+
+.search-field {
+    margin-left: 10px;
 }
 
 /* Types of settlements */

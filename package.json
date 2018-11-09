@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/SirMartin/WarOfRingMap#readme",
   "dependencies": {
-    "@types/jquery": "^3.3.22",
+    "@types/jquery": "^2.0.46",
     "@types/knockout": "^3.4.59",
-    "knockout": "^3.4.2"
+    "@types/lodash": "^4.14.117",
+    "knockout": "^3.4.2",
+    "lodash": "^4.17.11"
   }
 }

@@ -4,6 +4,7 @@ module WarOfTheRingMap.Models {
         id: number;
         name: string;
         color: string;
+        isCollapsed: KnockoutObservable<boolean>;
         isShadows: KnockoutObservable<boolean>;
         regions: KnockoutObservableArray<Subregion>;
 
@@ -12,14 +13,16 @@ module WarOfTheRingMap.Models {
             this.id = d.id;
             this.name = d.name;
             this.color = d.color;
-            this.regions = ko.observableArray(d.regions);
+            this.isCollapsed = ko.observable(false);
             this.isShadows = ko.observable(d.isShadows);
+            this.regions = ko.observableArray(d.regions);
         }
     }
 
     export class Subregion {
         id: number;
         name: string;
+        parentId: number;
         path: string;
         isStronghold: boolean;
         isCity: boolean;

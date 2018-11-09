@@ -7,8 +7,9 @@ var WarOfTheRingMap;
                 this.id = d.id;
                 this.name = d.name;
                 this.color = d.color;
-                this.regions = ko.observableArray(d.regions);
+                this.isCollapsed = ko.observable(false);
                 this.isShadows = ko.observable(d.isShadows);
+                this.regions = ko.observableArray(d.regions);
             }
         }
         Models.Region = Region;

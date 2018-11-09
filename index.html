@@ -5,10 +5,12 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="scripts/knockout-latest.js"></script>
-    <script src="scripts/list.min.js"></script>
+    <script src="scripts/lodash.min.js"></script>
     <script src="typescript/Controllers/mapController.js"></script>
     <script src="typescript/Models/regionModels.js"></script>
     <script src="typescript/start.js"></script>
+
+    <title>War of the Ring Interactive Map</title>
 </head>
 
 <body>
@@ -21,18 +23,19 @@
         <a href="#" data-bind="click: function() {setLanguage('en');return false;}"><img class="flag" src="images/us.svg" /></a>
     </div>
 
-    <div style="width:70%; display: inline-block; height: 100%;">
+    <div class="map">
         <img class="image clipped" data-bind="attr: {src: imageUrl}, style: { clipPath: selectedPath }" />
         <img class="image darker" data-bind="attr: {src: imageUrl}" />
     </div>
 
-    <div style="position: absolute; right: 0px;width:30%;display: inline-block;">
-        <!-- <div style="width:50%; display: inline-block;"> -->
-        <div id="the-list">
+    <div class="regions">
+        <input type="text" class="search-field" data-bind="textInput: searchText, attr: { placeholder: searchPlaceholderText }">
+        <div>
             <ul data-bind="foreach: regions">
+                <!-- ko if: regions().length > 0 -->
                 <li>
-                    <span data-bind="text: name;"></span>
-                    <ul data-bind="foreach: regions;">
+                    <a href="#" data-bind="click: function() {$parent.collapseRegion($data);return false;}"><span class="region-name" data-bind="text: name, style: { color: color }"></span></a>
+                    <ul data-bind="foreach: regions, visible: !isCollapsed()">
                         <li>
                             <a href="#" data-bind="click: function() {$parents[1].showRegion($data);return false;}"><span data-bind="text: name;"></span></a>
                                     <img class="fortification" src="images/fortification.png" data-bind="visible: isFortification" />
@@ -45,6 +48,7 @@
                         </li>
                     </ul>
                 </li>
+                <!-- /ko -->
             </ul>
         </div>
     </div>
