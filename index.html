@@ -9,13 +9,25 @@
     <script src="typescript/Controllers/mapController.js"></script>
     <script src="typescript/Models/regionModels.js"></script>
     <script src="typescript/start.js"></script>
+    <script src="scripts/consent.js"></script>
 
     <title>War of the Ring Interactive Map</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128975439-1"></script>
+
 </head>
 
 <body>
-    <div>
-        <a href="#" data-bind="visible: selectedPath() != '', click: function() { reset(); return false; }">Reset</a>
+    <div id="cookieBanner">
+        <div id="cookieBannerClose"><a href="#">x</a></div>
+        This website uses third party cookies exclusively to collect analytics data.
+        If you continue browsing or close this notice, you will accept their use.
+        <div id="cookieBannerActions">
+            <a class="noconsent" href="cookies.html">Learn about this website's cookies</a>
+            &mdash;
+            <a class="denyConsent noconsent" href="#">Disallow cookies</a>
+        </div>
     </div>
 
     <div class="flag-container">
@@ -32,6 +44,7 @@
         <div>
             <input type="text" class="search-field" data-bind="textInput: searchText, attr: { placeholder: searchPlaceholderText }">
             <a href="#" data-bind="event: { mouseover: enableHelp, mouseout: disableHelp }"><img class="help-image" /></a>
+            <a class="reset" href="#" data-bind="visible: selectedPath() != '', click: function() { reset(); return false; }">Reset</a>
             <div class="help-popup" data-bind="visible: isHelpPopupVisible">
                 <ul>
                     <li>
@@ -59,7 +72,7 @@
                 </ul>
             </div>
         </div>
-        <div>
+        <div class="regions-container">
             <ul data-bind="foreach: regions">
                 <!-- ko if: regions().length > 0 -->
                 <li>
@@ -89,7 +102,3 @@
 </body>
 
 </html>
-
-<div>Icons made by <a href="https://www.flaticon.com/authors/picol" title="Picol">Picol</a> from <a href="https://www.flaticon.com/"
-        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
